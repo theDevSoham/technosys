@@ -1,10 +1,10 @@
 import { theme } from "@/assets/theme";
 import Image from "next/image";
-import HeroCarousel from "./HeroCarousel";
+import HeroCarousel from "../../HeroCarousel";
 
 const HeroSection = () => {
   return (
-    <div>
+    <section>
       <div className="relative w-full lg:h-[85vh] h-[60vh]">
         <div className="absolute inset-0 w-full h-full z-1">
           <Image
@@ -25,7 +25,7 @@ const HeroSection = () => {
           <HeroCarousel />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
