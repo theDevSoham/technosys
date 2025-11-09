@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { geistMono, geistSans } from "@/assets/fonts";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {

@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+.carousel,
+.carousel-slider {
+  height: 100%;
+}
+
+.slider-wrapper,
+.axis-horizontal {
+  height: 100%;
+}
+
+.slider-wrapper,
+.axis-horizontal > ul {
+  height: 100%;
+}
