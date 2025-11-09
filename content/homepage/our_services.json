@@ -2,20 +2,28 @@
   "heading": "Our Services",
   "card_content": [
     {
+      "id": 1,
       "title": "Broadband",
-      "desc": "Fast and efficient internet access for both personal and business needs."
+      "desc": "Fast and efficient internet access for both personal and business needs.",
+      "icon": "wifi"
     },
     {
+      "id": 2,
       "title": "Leased Line",
-      "desc": "High-speed dedicated internet connection for continuous and reliable data transfer."
+      "desc": "High-speed dedicated internet connection for continuous and reliable data transfer.",
+      "icon": "cable"
     },
     {
+      "id": 3,
       "title": "Fiber Services",
-      "desc": "Cutting-edge fiber optic technology for ultra-fast data transmission and connectivity."
+      "desc": "Cutting-edge fiber optic technology for ultra-fast data transmission and connectivity.",
+      "icon": "building"
     },
     {
+      "id": 4,
       "title": "Industry IT Support",
-      "desc": "Beyond connectivity, we provide end-to-end IT infrastructure support to keep business running smoothly."
+      "desc": "Beyond connectivity, we provide end-to-end IT infrastructure support to keep business running smoothly.",
+      "icon": "server"
     }
   ]
 }
