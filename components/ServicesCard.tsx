@@ -12,7 +12,7 @@ type ServiceCardProps = {
 const ServicesCard: React.FC<ServiceCardProps> = ({ title, desc, icon }) => {
   return (
     <div
-      className="w-full min-h-44 lg:min-h-56 rounded-4xl p-6 flex flex-col justify-center lg:items-center items-start shadow-lg border gap-4"
+      className="w-full min-h-44 lg:min-h-56 rounded-4xl p-6 flex flex-col justify-center lg:items-center items-start shadow-lg border gap-4 cursor-pointer hover:scale-105 transition-transform duration-300"
       style={{
         background: `linear-gradient(to bottom right, ${theme.colors.purple[800]} 0%, ${theme.colors.primary[800]} 65%)`,
         color: `${theme.colors.primary[50]}`,

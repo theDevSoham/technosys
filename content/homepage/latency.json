@@ -1,0 +1,27 @@
+{
+  "heading": "Latency",
+  "top_cards": [
+    {
+      "id": 1,
+      "ping": "20ms",
+      "location": "Gujarat"
+    },
+    {
+      "id": 2,
+      "ping": "06ms",
+      "location": "Mumbai"
+    }
+  ],
+  "bottom_cards": [
+    {
+      "id": 3,
+      "ping": "12ms",
+      "location": "Delhi"
+    },
+    {
+      "id": 4,
+      "ping": "10ms",
+      "location": "Bangalore"
+    }
+  ]
+}
