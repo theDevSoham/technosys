@@ -1,0 +1,54 @@
+{
+  "left_section": {
+    "headline": "Network Uptime History,",
+    "subheadline": "A decade of consistent excellence",
+    "banner": {
+      "text": "99.99%",
+      "subtext": "Live Uptime"
+    },
+    "cards": [
+      {
+        "tag": "Average Uptime",
+        "metric": "99.97%",
+        "duration": "Last 10 years",
+        "metric_color": "#E01E7C"
+      },
+      {
+        "tag": "Peak Uptime",
+        "metric": "99.99%",
+        "duration": "2022-2024",
+        "metric_color": "#009966"
+      },
+      {
+        "tag": "Network Incidents",
+        "metric": "<5",
+        "duration": "Per year average",
+        "metric_color": "#155DFC"
+      }
+    ]
+  },
+  "right_section": {
+    "headline": "Graph",
+    "description": {
+      "para1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "para2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    }
+  },
+  "graph_data": {
+    "labels": [
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "dataset_data": [
+      99.9, 99.925, 99.95, 99.975, 99.99, 99.995, 99.997, 99.998, 99.999, 100
+    ]
+  }
+}
