@@ -12,7 +12,7 @@ type ServiceCardProps = {
 const ServicesCard: React.FC<ServiceCardProps> = ({ title, desc, icon }) => {
   return (
     <div
-      className="w-full min-h-44 lg:min-h-56 rounded-4xl p-6 flex flex-col justify-center lg:items-center items-start shadow-lg border gap-4 cursor-pointer hover:scale-105 transition-transform duration-300"
+      className="w-full min-h-44 lg:min-h-60 rounded-4xl p-6 flex flex-col justify-center lg:items-center items-start shadow-lg border gap-4 cursor-pointer hover:scale-105 transition-transform duration-300"
       style={{
         background: `linear-gradient(to bottom right, ${theme.colors.purple[800]} 0%, ${theme.colors.primary[800]} 65%)`,
         color: `${theme.colors.primary[50]}`,
@@ -45,11 +45,21 @@ const ServicesCard: React.FC<ServiceCardProps> = ({ title, desc, icon }) => {
         </div>
 
         {/* Title */}
-        <h3 className="text-lg font-semibold mb-2">{title}</h3>
+        <h3
+          className={theme.typography.techno_20_semibold}
+          style={{ color: theme.colors.white[0] }}
+        >
+          {title}
+        </h3>
       </div>
 
       {/* Description */}
-      <p className="text-sm leading-relaxed">{desc}</p>
+      <p className={`${theme.typography.techno_16_reg} hidden lg:block`}>
+        {desc}
+      </p>
+      <p className={`${theme.typography.techno_16_reg} block lg:hidden`}>
+        {desc}
+      </p>
     </div>
   );
 };

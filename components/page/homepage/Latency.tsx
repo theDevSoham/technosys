@@ -93,9 +93,9 @@ function LatencyBox({ city, time }: { city: string; time: string }) {
         hover:shadow-[0_0_25px_rgba(255,0,128,0.2)]
         hover:scale-105
         transition-all duration-300
-		p-6
-		overflow-hidden
-		cursor-pointer
+        p-6
+        overflow-hidden
+        cursor-pointer
       "
       style={{
         background: `linear-gradient(to bottom right, ${theme.colors.purple[800]}, ${theme.colors.primary[800]})`,
@@ -117,7 +117,15 @@ function LatencyBox({ city, time }: { city: string; time: string }) {
         }}
       />
       <p
-        className={`${theme.typography.techno_36_bold}`}
+        className={`${theme.typography.techno_36_bold} hidden lg:block`}
+        style={{
+          color: theme.colors.pink[500],
+        }}
+      >
+        {time}
+      </p>
+      <p
+        className={`${theme.typography.techno_24_bold} block lg:hidden`}
         style={{
           color: theme.colors.pink[500],
         }}

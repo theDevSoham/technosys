@@ -12,6 +12,9 @@ export const theme = {
     techno_14_semibold: `${openSans.className} font-semibold text-[14px] leading-[24px] tracking-[0%]`,
     techno_36_semibold: `${openSans.className} font-semibold text-[36px] leading-[44px] tracking-[0%]`,
     techno_36_bold: `${openSans.className} font-bold text-[36px] leading-[44px] tracking-[0%]`,
+    techno_12_reg: `${openSans.className} font-normal text-[12px] leading-[16px] tracking-[0%]`,
+    techno_8_reg: `${openSans.className} font-normal text-[8px] leading-[12px] tracking-[0%]`,
+    techno_10_bold: `${openSans.className} font-bold text-[10px] leading-[20px] tracking-[0%]`,
   },
   colors: {
     primary: {
@@ -65,6 +68,9 @@ export const theme = {
     green: {
       100: "#00C950",
       200: "#00BC7D",
+    },
+    white: {
+      0: "#ffffff",
     },
   },
 };

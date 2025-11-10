@@ -16,8 +16,21 @@ const OurServices = () => {
       <div
         className={`${container} flex flex-col justify-center items-center gap-8`}
       >
-        <div className="w-full">
-          <h2 className={`${theme.typography.techno_36_semibold} text-left`}>
+        <div className="w-full" style={{ color: theme.colors.primary[50] }}>
+          <h2
+            className={`${theme.typography.techno_36_semibold} text-left hidden lg:block`}
+            style={{
+              color: theme.colors.white[0],
+            }}
+          >
+            {our_services.heading}
+          </h2>
+          <h2
+            className={`${theme.typography.techno_24_semibold} text-left block lg:hidden`}
+            style={{
+              color: theme.colors.white[0],
+            }}
+          >
             {our_services.heading}
           </h2>
         </div>
