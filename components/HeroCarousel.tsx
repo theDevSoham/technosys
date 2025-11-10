@@ -4,8 +4,13 @@ import { Carousel } from "react-responsive-carousel";
 import heros from "@/content/homepage/hero.json";
 import { theme } from "@/assets/theme";
 import CarouselArrow from "./CarouselArrow";
+import AnimatedButton from "./AnimatedButton";
 
 const HeroCarousel = () => {
+  const handleDiscover = () => {
+    console.log("Discover");
+  };
+
   return (
     <Carousel
       showThumbs={false} // hide thumbnails
@@ -79,23 +84,7 @@ const HeroCarousel = () => {
               {hero.hero_subheader}
             </h3>
 
-            <button
-              className={`px-16 py-6 rounded-full cursor-pointer opacity-90 hover:opacity-100 transition-opacity duration-500 ease-in-out`}
-              style={{
-                background: `linear-gradient(90deg, ${theme.colors.red[500]}, ${theme.colors.pink[500]})`,
-              }}
-            >
-              <p
-                className={`${theme.typography.techno_24_semibold} hidden lg:block`}
-              >
-                {hero.cta}
-              </p>
-              <p
-                className={`${theme.typography.techno_16_semibold} block lg:hidden`}
-              >
-                {hero.cta}
-              </p>
-            </button>
+            <AnimatedButton onClick={handleDiscover}>{hero.cta}</AnimatedButton>
           </div>
         </div>
       ))}

@@ -16,7 +16,7 @@ const OurInfra = () => {
         className={`${container} flex flex-col lg:flex-row items-center gap-12`}
       >
         {/* Left content */}
-        <div className="flex-1 flex flex-col gap-4">
+        <div className="flex-2 flex flex-col gap-4">
           {/* Heading */}
           <h2
             className={`${theme.typography.techno_36_semibold} hidden lg:block`}

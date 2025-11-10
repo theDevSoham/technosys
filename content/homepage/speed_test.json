@@ -1,0 +1,34 @@
+{
+  "headline": "Test Your Connection Speed",
+  "cta": "Start Speed Test",
+  "cards": [
+    {
+      "title": "Download",
+      "speed": "0",
+      "unit": "Mbps",
+      "icon": "download"
+    },
+    {
+      "title": "Upload",
+      "speed": "0",
+      "unit": "Mbps",
+      "icon": "upload"
+    },
+    {
+      "title": "Ping",
+      "speed": "0.0",
+      "unit": "Ms",
+      "icon": "wifi"
+    }
+  ],
+  "faq_cards": [
+    {
+      "title": "Why Speed Matters",
+      "desc": "Fast, reliable internet is essential for gaming, streaming, and work. Our network delivers consistent speeds 24/7."
+    },
+    {
+      "title": "Symmetric Speeds",
+      "desc": "Unlike traditional connections, we offer equal download and upload speeds for seamless video calls and content creation."
+    }
+  ]
+}

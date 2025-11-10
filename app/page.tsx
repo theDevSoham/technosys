@@ -3,6 +3,7 @@ import HeroSection from "@/components/page/homepage/HeroSection";
 import Latency from "@/components/page/homepage/Latency";
 import OurInfra from "@/components/page/homepage/OurInfra";
 import OurServices from "@/components/page/homepage/OurServices";
+import SpeedTest from "@/components/page/homepage/SpeedTest";
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
         <Graph />
       </div>
       <OurInfra />
+      <SpeedTest />
     </main>
   );
 };
