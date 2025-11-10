@@ -16,8 +16,8 @@ export default function AnimatedGauge({
 }: AnimatedGaugeProps) {
   const controls = useAnimation();
 
-  // Map 0–100 to -120° to 120° for semicircle gauge
-  const angle = (value / 100) * 240 - 120;
+  // Map 0–500 to -120° to 120° for semicircle gauge
+  const angle = (value / 500) * 240 - 120;
 
   useEffect(() => {
     controls.start({ rotate: angle });

@@ -18,6 +18,7 @@ const icons: Record<IconKey, JSX.Element> = {
 
 interface SpeedCardItem {
   title: string;
+  slug: "download" | "upload" | "ping";
   speed: string;
   icon: IconKey;
   unit: string;
@@ -49,9 +50,9 @@ export default function SpeedTest() {
     const interval = setInterval(() => {
       progress += 10;
       setSpeed({
-        download: Math.min(progress * 1.5, 100),
-        upload: Math.min(progress * 1.2, 80),
-        ping: Math.min(progress / 2, 20),
+        download: Math.min(progress * 5, 500), // max 500 Mbps
+        upload: Math.min(progress * 3, 300), // max 300 Mbps
+        ping: Math.max(20 - progress * 0.15, 5), // ping decreases toward 5ms
       });
       if (progress >= 100) {
         clearInterval(interval);
@@ -101,7 +102,7 @@ export default function SpeedTest() {
                   key={item.title}
                   icon={icons[item.icon]}
                   label={item.title}
-                  value={item.speed}
+                  value={speed[item.slug]}
                   unit={item.unit}
                 />
               ))}
@@ -127,7 +128,7 @@ function SpeedCard({
 }: {
   icon: React.ReactNode;
   label: string;
-  value: string;
+  value: number;
   unit: string;
 }) {
   return (
@@ -141,7 +142,7 @@ function SpeedCard({
         <div className={`${theme.typography.techno_20_semibold}`}>{label}</div>
       </div>
       <div className="text-2xl font-bold mt-1">
-        {value} <span className="text-sm">{unit}</span>
+        {value.toFixed(1)} <span className="text-sm">{unit}</span>
       </div>
     </motion.div>
   );

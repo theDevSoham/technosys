@@ -4,18 +4,21 @@
   "cards": [
     {
       "title": "Download",
+      "slug": "download",
       "speed": "0",
       "unit": "Mbps",
       "icon": "download"
     },
     {
       "title": "Upload",
+      "slug": "upload",
       "speed": "0",
       "unit": "Mbps",
       "icon": "upload"
     },
     {
       "title": "Ping",
+      "slug": "ping",
       "speed": "0.0",
       "unit": "Ms",
       "icon": "wifi"
