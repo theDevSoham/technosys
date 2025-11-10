@@ -7,9 +7,11 @@ export const Home = () => {
   return (
     <main className="w-full">
       <HeroSection />
-      <OurServices />
-      <Latency />
-      <Graph />
+      <div className="gradient_bg">
+        <OurServices />
+        <Latency />
+        <Graph />
+      </div>
     </main>
   );
 };

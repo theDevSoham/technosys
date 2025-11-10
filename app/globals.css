@@ -14,3 +14,13 @@
 .axis-horizontal > ul {
   height: 100%;
 }
+
+.gradient_bg {
+  background: linear-gradient(to bottom, #1c0f41 0%, #000 40%);
+}
+
+@media (min-width: 760px) {
+  .gradient_bg {
+    background: radial-gradient(circle at center, #7f67e8 0%, #000 40%);
+  }
+}

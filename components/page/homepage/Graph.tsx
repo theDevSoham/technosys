@@ -6,7 +6,7 @@ import { theme } from "@/assets/theme";
 
 const Graph = () => {
   return (
-    <section className="w-full bg-black py-16">
+    <section className="w-full py-16">
       <div
         className={`${container} w-full h-full flex flex-col-reverse lg:flex-row items-start gap-10 lg:gap-16`}
       >

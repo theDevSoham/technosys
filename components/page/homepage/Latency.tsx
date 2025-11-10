@@ -6,15 +6,21 @@ import latency from "@/content/homepage/latency.json";
 
 const Latency = () => {
   return (
-    <section className="lg:h-200 h-auto flex flex-col items-center justify-center py-10 bg-black text-white">
+    <section className="lg:h-200 h-auto flex flex-col items-center justify-center py-10">
       <div className={`${container} w-full h-full overflow-hidden`}>
         <h2
           className={`${theme.typography.techno_36_semibold} hidden lg:block`}
+          style={{
+            color: theme.colors.white[0],
+          }}
         >
           {latency.heading}
         </h2>
         <h2
           className={`${theme.typography.techno_24_semibold} block lg:hidden`}
+          style={{
+            color: theme.colors.white[0],
+          }}
         >
           {latency.heading}
         </h2>

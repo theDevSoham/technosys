@@ -9,7 +9,6 @@ const OurServices = () => {
     <section
       className="w-full py-16"
       style={{
-        background: `${theme.colors.primary[700]}`,
         color: theme.colors.primary[50],
       }}
     >
