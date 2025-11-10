@@ -46,6 +46,7 @@ const HeroCarousel = () => {
     >
       {heros.map((hero) => (
         <div
+          key={hero.id}
           className="flex justify-center items-center overflow-hidden w-full h-full"
           style={{ color: theme.colors.white[0] }}
         >
