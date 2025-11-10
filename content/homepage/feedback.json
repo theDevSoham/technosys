@@ -1,0 +1,23 @@
+{
+  "headline": "Feedback",
+  "cards": [
+    {
+      "id": 1,
+      "name": "Hanna Dew",
+      "rating": 4,
+      "review": "Technosys Teleservices delivers exceptional internet solutions. Highly recommended for reliable service! Technosys Teleservices delivers exceptional internet solutions. Highly recom"
+    },
+    {
+      "id": 2,
+      "name": "Hanna Dew",
+      "rating": 4,
+      "review": "Technosys Teleservices delivers exceptional internet solutions. Highly recommended for reliable service! Technosys Teleservices delivers exceptional internet solutions. Highly recom"
+    },
+    {
+      "id": 3,
+      "name": "Hanna Dew",
+      "rating": 4,
+      "review": "Technosys Teleservices delivers exceptional internet solutions. Highly recommended for reliable service! Technosys Teleservices delivers exceptional internet solutions. Highly recom"
+    }
+  ]
+}

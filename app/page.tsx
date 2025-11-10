@@ -1,3 +1,4 @@
+import Feedback from "@/components/page/homepage/Feedback";
 import Graph from "@/components/page/homepage/Graph";
 import HeroSection from "@/components/page/homepage/HeroSection";
 import IndustriesServed from "@/components/page/homepage/IndustriesServed";
@@ -18,6 +19,7 @@ export const Home = () => {
       <OurInfra />
       <SpeedTest />
       <IndustriesServed />
+      <Feedback />
     </main>
   );
 };
