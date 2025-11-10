@@ -3,6 +3,7 @@ import "./globals.css";
 import { geistMono, geistSans } from "@/assets/fonts";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Technosys | High speed internet solutions",
@@ -22,6 +23,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
