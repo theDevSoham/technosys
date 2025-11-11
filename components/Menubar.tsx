@@ -108,7 +108,7 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
                         pathname === "/account" ? theme.colors.pink[600] : "",
                     }}
                   >
-                    My Account
+                    <Link href="/account">My Account</Link>
                   </li>
                 </ul>
               </motion.div>
