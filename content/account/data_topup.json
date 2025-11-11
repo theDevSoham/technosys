@@ -1,0 +1,30 @@
+{
+  "headline": "Data Top Up",
+  "top_up_methods": [
+    {
+      "name": "Basic Boost",
+      "price": "₹599",
+      "data": "50 GB data",
+      "validity": "Valid for 7 days"
+    },
+    {
+      "name": "Power Pack",
+      "price": "₹999",
+      "data": "50 GB data",
+      "validity": "Valid for 7 days"
+    },
+    {
+      "name": "Unlimited Pro",
+      "price": "₹1599",
+      "data": "50 GB data",
+      "validity": "Valid for 7 days"
+    },
+    {
+      "name": "Enterprise",
+      "price": "₹2499",
+      "data": "50 GB data",
+      "validity": "Valid for 7 days"
+    }
+  ],
+  "cta": "Buy Now"
+}
