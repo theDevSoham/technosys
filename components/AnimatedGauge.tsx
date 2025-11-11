@@ -39,7 +39,7 @@ export default function AnimatedGauge({
   }, [value, progress]);
 
   return (
-    <div className="relative w-[18rem] max-w-full aspect-[2/1] flex items-end justify-center">
+    <div className="relative w-[18rem] max-w-full aspect-2/1 flex items-end justify-center">
       {/* Background semicircle */}
       <svg
         viewBox="0 0 200 100"
@@ -80,15 +80,15 @@ export default function AnimatedGauge({
       </svg>
 
       {/* Inner semi-container */}
-      <div className="absolute bottom-0 w-[60%] aspect-[2/1] bg-[#0B0225]/90 rounded-t-full flex flex-col items-center justify-end shadow-[0_-4px_20px_rgba(168,85,247,0.2)] backdrop-blur-sm">
+      <div className="absolute bottom-0 w-[60%] aspect-2/1 bg-[#0B0225]/90 rounded-t-full flex flex-col items-center justify-end shadow-[0_-4px_20px_rgba(168,85,247,0.2)] backdrop-blur-sm">
         <div className="relative flex items-center justify-center">
           {/* Needle (linked to same progress) */}
           <motion.div
             style={{ rotate: rotation }}
             transition={{ type: "spring", stiffness: 80, damping: 12 }}
-            className="origin-bottom absolute bottom-3 left-1/2 w-[2px] h-[3rem] bg-white -translate-x-1/2"
+            className="origin-bottom absolute bottom-3 left-1/2 w-0.5 h-12 bg-white -translate-x-1/2"
           >
-            <div className="absolute bottom-9 left-1/2 w-[6px] h-[18px] bg-gradient-to-b from-[#C084FC] to-[#7C3AED] rounded-md -translate-x-1/2 shadow-[0_0_10px_rgba(168,85,247,0.7)]" />
+            <div className="absolute bottom-9 left-1/2 w-1.5 h-[18px] bg-linear-to-b from-[#C084FC] to-[#7C3AED] rounded-md -translate-x-1/2 shadow-[0_0_10px_rgba(168,85,247,0.7)]" />
           </motion.div>
 
           <div className="w-6 h-6 bg-white rounded-full z-10 relative shadow-[0_0_12px_rgba(255,255,255,0.6)]" />
