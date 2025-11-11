@@ -1,0 +1,35 @@
+{
+  "headline": "My Account",
+  "details_card": {
+    "avatar": "/avatar.png",
+    "username": "Username",
+    "details": [
+      {
+        "text": "johndoe@gmail.com",
+        "type": "email"
+      },
+      {
+        "text": "+91 98765 43210",
+        "type": "tel"
+      },
+      {
+        "text": "Mumbai, Maharashtra",
+        "type": "address"
+      }
+    ],
+    "status_details": [
+      {
+        "label": "Account Status",
+        "value": "Active",
+        "color": "#008236",
+        "bg": "#DCFCE7"
+      },
+      {
+        "label": "Plan",
+        "value": "Premium 1 Gbps",
+        "color": "#8200DB",
+        "bg": "#F3E8FF"
+      }
+    ]
+  }
+}
