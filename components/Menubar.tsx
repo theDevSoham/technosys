@@ -10,6 +10,8 @@ import {
   MenuItems,
   Transition,
 } from "@headlessui/react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 type MenuBarProps = {
   mobileView?: boolean;
@@ -20,6 +22,7 @@ const services = ["Internet Setup", "Network Security", "Cloud Hosting"];
 const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const pathname = usePathname();
 
   /* -------------------- MOBILE VIEW -------------------- */
   if (mobileView) {
@@ -98,7 +101,13 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
                   <li className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors text-center text-lg font-semibold">
                     Blog
                   </li>
-                  <li className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors text-center text-lg font-semibold">
+                  <li
+                    className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors text-center text-lg font-semibold"
+                    style={{
+                      color:
+                        pathname === "/account" ? theme.colors.pink[600] : "",
+                    }}
+                  >
                     My Account
                   </li>
                 </ul>
@@ -162,8 +171,13 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
       </div>
 
       {/* My Account */}
-      <div className="cursor-pointer hover:text-[#7F67E8] transition-colors">
-        My Account
+      <div
+        className="cursor-pointer hover:text-[#7F67E8] transition-colors"
+        style={{
+          color: pathname === "/account" ? theme.colors.pink[600] : "",
+        }}
+      >
+        <Link href="/account">My Account</Link>
       </div>
     </ul>
   );

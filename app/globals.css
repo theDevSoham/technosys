@@ -18,11 +18,20 @@
 .gradient_bg {
   background: radial-gradient(
       circle at 50% 60%,
-       rgba(127, 103, 232, 0.25) 0%,
-      rgba(28, 15, 65, 0.6) 45%, 
+      rgba(127, 103, 232, 0.25) 0%,
+      rgba(28, 15, 65, 0.6) 45%,
       rgba(0, 0, 0, 0.9) 85%
     ),
     linear-gradient(to bottom, #1c0f41 0%, #000 40%);
+}
+
+.account_gradient {
+  background: radial-gradient(
+    circle at 50% 30%,
+    #3A2875 0%,
+    #040828 50%,
+    #000 100%
+  );
 }
 
 @media (min-width: 760px) {

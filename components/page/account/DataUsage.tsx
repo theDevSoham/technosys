@@ -9,7 +9,7 @@ import data_usage from "@/content/account/data_usage.json";
 
 export default function DataUsage() {
   return (
-    <section className="w-full bg-black text-white">
+    <section className="w-full text-white">
       <div className={`${container} lg:py-16 py-10`}>
         <SectionHeader as="h2" text={data_usage.headline} />
 

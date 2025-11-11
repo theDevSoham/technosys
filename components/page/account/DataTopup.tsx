@@ -7,7 +7,7 @@ import AnimatedButton from "@/components/AnimatedButton";
 
 const DataTopup = () => {
   return (
-    <section className="w-full bg-black text-white">
+    <section className="w-full text-white">
       <div className={`${container} lg:py-16 py-10`}>
         <SectionHeader as="h2" text={data_topup.headline} />
 

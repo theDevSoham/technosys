@@ -2,7 +2,6 @@
 
 import {
   motion,
-  useAnimation,
   useMotionValue,
   useTransform,
   animate,

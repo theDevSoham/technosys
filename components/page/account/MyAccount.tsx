@@ -8,7 +8,7 @@ import React from "react";
 
 const MyAccount = () => {
   return (
-    <section className="w-full bg-black text-white">
+    <section className="w-full text-white">
       <div className={`${container} lg:py-8 py-4`}>
         <SectionHeader as="h2" text={my_account.headline} />
 

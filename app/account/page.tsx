@@ -5,7 +5,7 @@ import React from "react";
 
 const Account = () => {
   return (
-    <main>
+    <main className="account_gradient">
       <MyAccount />
 	  <DataUsage />
 	  <DataTopup />

@@ -13,8 +13,7 @@ import {
   ChartConfiguration,
   ChartData,
   ChartOptions,
-  LineController, // ✅ Add this
-  ChartTypeRegistry,
+  LineController,
 } from "chart.js";
 
 // Register necessary Chart.js components
