@@ -37,6 +37,7 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
           {menuOpen ? <X size={28} /> : <Menu size={32} />}
         </button>
 
+        {/* Drawer */}
         <AnimatePresence>
           {menuOpen && (
             <>
@@ -50,28 +51,37 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
                 onClick={() => setMenuOpen(false)}
               />
 
-              {/* Dropdown */}
+              {/* Drawer Panel */}
               <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.25 }}
-                className="fixed top-[72px] left-0 w-full rounded-t-2xl shadow-lg overflow-hidden z-50"
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "100%" }}
+                transition={{ type: "tween", duration: 0.3 }}
+                className="fixed top-0 right-0 h-full w-[80%] max-w-sm z-50 flex flex-col"
                 style={{
-                  backgroundColor: theme.colors.primary[700],
+                  backgroundColor: theme.colors.primary[800],
                   color: theme.colors.purple[50],
                 }}
               >
-                <ul className="flex flex-col divide-y divide-[#393E6D]">
+                {/* Header */}
+                <div className="flex items-center justify-between px-6 py-5 border-b border-[#393E6D]">
+                  <span className="text-lg font-semibold">Menu</span>
+                  <button onClick={() => setMenuOpen(false)}>
+                    <X size={24} />
+                  </button>
+                </div>
+
+                {/* Menu Items */}
+                <ul className="flex-1 flex flex-col divide-y divide-[#393E6D] overflow-y-auto">
                   {/* Services with subtree */}
                   <li
-                    className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors text-center text-lg font-semibold flex items-center justify-center space-x-2"
-                    onClick={() => setMobileServicesOpen((prev) => !prev)}
+                    className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] flex items-center justify-between transition-colors"
+                    onClick={() => setMobileServicesOpen((p) => !p)}
                   >
-                    <span>Services</span>
+                    <span className="font-semibold">Services</span>
                     <ChevronDown
                       size={18}
-                      className={`transition-transform duration-200 ${
+                      className={`transition-transform ${
                         mobileServicesOpen ? "rotate-180" : ""
                       }`}
                     />
@@ -83,13 +93,13 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: 0.3 }}
                         className="bg-[#2A2F5C] text-sm divide-y divide-[#393E6D]"
                       >
                         {services.map((s) => (
                           <li
                             key={s}
-                            className="py-3 cursor-pointer hover:bg-[#393E6D] transition-colors"
+                            className="py-3 pl-10 pr-4 cursor-pointer hover:bg-[#393E6D] transition-colors"
                           >
                             {s}
                           </li>
@@ -98,17 +108,22 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
                     )}
                   </AnimatePresence>
 
-                  <li className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors text-center text-lg font-semibold">
+                  <li className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors font-semibold">
                     Blog
                   </li>
+
                   <li
-                    className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors text-center text-lg font-semibold"
+                    className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors font-semibold"
                     style={{
                       color:
-                        pathname === "/account" ? theme.colors.pink[600] : "",
+                        pathname === "/account"
+                          ? theme.colors.pink[600]
+                          : theme.colors.purple[50],
                     }}
                   >
-                    <Link href="/account">My Account</Link>
+                    <Link href="/account" onClick={() => setMenuOpen(false)}>
+                      My Account
+                    </Link>
                   </li>
                 </ul>
               </motion.div>
