@@ -17,12 +17,11 @@
 
 .gradient_bg {
   background: radial-gradient(
-      circle at 50% 60%,
-      rgba(127, 103, 232, 0.25) 0%,
-      rgba(28, 15, 65, 0.6) 45%,
-      rgba(0, 0, 0, 0.9) 85%
-    ),
-    linear-gradient(to bottom, #1c0f41 0%, #000 40%);
+      circle at 50% 50%,
+      #3A2875 0%,
+      #000 45%,
+      #1c0f41 85%
+    );
 }
 
 .account_gradient {
