@@ -3,11 +3,13 @@
   "current_cycle": {
     "heading": "Current Cycle",
     "subheading": "Nov 1 - Nov 30, 2025",
-    "toast": "12% more than last month"
+    "toast": "12% more than last month",
+    "description": "Monitor your monthly data consumption for a clearer view of how much bandwidth you’ve used across downloads and uploads. Stay informed and optimize your usage efficiently."
   },
   "data_usage_history": {
-	"heading": "Data Usage History",
-	"subheading": "Breakdown",
-	"month": "November"
+    "heading": "Data Usage History",
+    "subheading": "Breakdown",
+    "month": "November",
+    "description": "Track your day-to-day data trends with detailed insights into your download and upload history, helping you plan better and avoid unexpected slowdowns."
   }
 }

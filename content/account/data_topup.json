@@ -5,25 +5,29 @@
       "name": "Basic Boost",
       "price": "₹599",
       "data": "50 GB data",
-      "validity": "Valid for 7 days"
+      "validity": "Valid for 7 days",
+      "description": "Ideal for light users who need a quick data boost to stay connected without interruptions."
     },
     {
       "name": "Power Pack",
       "price": "₹999",
       "data": "50 GB data",
-      "validity": "Valid for 7 days"
+      "validity": "Valid for 7 days",
+      "description": "Perfect for moderate users requiring extra bandwidth for streaming and everyday tasks."
     },
     {
       "name": "Unlimited Pro",
       "price": "₹1599",
       "data": "50 GB data",
-      "validity": "Valid for 7 days"
+      "validity": "Valid for 7 days",
+      "description": "Suited for professionals and heavy users who demand high-speed access for multiple devices."
     },
     {
       "name": "Enterprise",
       "price": "₹2499",
       "data": "50 GB data",
-      "validity": "Valid for 7 days"
+      "validity": "Valid for 7 days",
+      "description": "Designed for business-grade performance with premium data capacity and priority support."
     }
   ],
   "cta": "Buy Now"
