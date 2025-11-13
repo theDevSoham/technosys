@@ -5,6 +5,7 @@ import heros from "@/content/homepage/hero.json";
 import { theme } from "@/assets/theme";
 import CarouselArrow from "./CarouselArrow";
 import AnimatedButton from "./AnimatedButton";
+import Image from "next/image";
 
 const HeroCarousel = () => {
   const handleDiscover = () => {
@@ -31,7 +32,7 @@ const HeroCarousel = () => {
           onClick={onClickHandler}
           visible={hasPrev}
           label={label}
-          className="left-5"
+          className="left-5 z-99 text-white"
         />
       )}
       renderArrowNext={(onClickHandler, hasNext, label) => (
@@ -40,52 +41,73 @@ const HeroCarousel = () => {
           onClick={onClickHandler}
           visible={hasNext}
           label={label}
-          className="right-5"
+          className="right-5 z-99 text-white"
         />
       )}
     >
       {heros.map((hero) => (
-        <div
-          key={hero.id}
-          className="flex justify-center items-center overflow-hidden w-full h-full"
-          style={{ color: theme.colors.white[0] }}
-        >
-          <div
-            key={hero.id}
-            className="flex flex-col justify-center items-center max-w-[80%] md:max-w-[50%] text-center gap-6 lg:gap-8"
-          >
-            <p
-              className={`${theme.typography.techno_20_semibold} hidden lg:block`}
-            >
-              {hero.hero_tag}
-            </p>
-            <p
-              className={`${theme.typography.techno_16_semibold} block lg:hidden`}
-            >
-              {hero.hero_tag}
-            </p>
-            <h2
-              className={`${theme.typography.techno_56_bold} hidden lg:block`}
-            >
-              {hero.hero_header}
-            </h2>
-            <h2
-              className={`${theme.typography.techno_36_semibold} block lg:hidden`}
-            >
-              {hero.hero_header}
-            </h2>
-            <h3
-              className={`${theme.typography.techno_24_semibold} hidden lg:block`}
-            >
-              {hero.hero_subheader}
-            </h3>
-            <h3
-              className={`${theme.typography.techno_16_semibold} block lg:hidden`}
-            >
-              {hero.hero_subheader}
-            </h3>
+        <div className="relative w-full h-full">
+          <div className="absolute inset-0 w-full h-full z-1">
+            <Image
+              src={hero.bg_img || "/hero-image.png"}
+              width={300}
+              height={300}
+              alt="hero image"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-            <AnimatedButton onClick={handleDiscover}>{hero.cta}</AnimatedButton>
+          <div
+            className="absolute inset-0 w-full h-full z-2"
+            style={{
+              color: theme.colors.primary[50],
+            }}
+          >
+            <div
+              key={hero.id}
+              className="flex justify-center items-center overflow-hidden w-full h-full"
+              style={{ color: theme.colors.white[0] }}
+            >
+              <div
+                key={hero.id}
+                className="flex flex-col justify-center items-center max-w-[80%] md:max-w-[50%] text-center gap-6 lg:gap-8"
+              >
+                <p
+                  className={`${theme.typography.techno_20_semibold} hidden lg:block`}
+                >
+                  {hero.hero_tag}
+                </p>
+                <p
+                  className={`${theme.typography.techno_16_semibold} block lg:hidden`}
+                >
+                  {hero.hero_tag}
+                </p>
+                <h2
+                  className={`${theme.typography.techno_56_bold} hidden lg:block`}
+                >
+                  {hero.hero_header}
+                </h2>
+                <h2
+                  className={`${theme.typography.techno_36_semibold} block lg:hidden`}
+                >
+                  {hero.hero_header}
+                </h2>
+                <h3
+                  className={`${theme.typography.techno_24_semibold} hidden lg:block`}
+                >
+                  {hero.hero_subheader}
+                </h3>
+                <h3
+                  className={`${theme.typography.techno_16_semibold} block lg:hidden`}
+                >
+                  {hero.hero_subheader}
+                </h3>
+
+                <AnimatedButton onClick={handleDiscover}>
+                  {hero.cta}
+                </AnimatedButton>
+              </div>
+            </div>
           </div>
         </div>
       ))}

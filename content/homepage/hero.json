@@ -4,6 +4,7 @@
     "hero_tag": "Connecting You to Unparalleled Connectivity",
     "hero_header": "Experience High-Speed Internet Solutions",
     "hero_subheader": "Technosys delivers cutting-edge broadband, leased line, and fiber connectivity — engineered for seamless performance and absolute reliability across all your personal and business needs.",
+    "bg_img": "/hero-image.png",
     "cta": "Discover More"
   },
   {
@@ -11,6 +12,7 @@
     "hero_tag": "Powering the Digital Future",
     "hero_header": "Stay Connected, Always Ahead",
     "hero_subheader": "From high-speed broadband to enterprise-grade leased lines, Technosys ensures lightning-fast, secure, and consistent connectivity wherever you are.",
+    "bg_img": "/hero_2.png",
     "cta": "Discover More"
   },
   {
@@ -18,6 +20,7 @@
     "hero_tag": "Driven by Speed, Defined by Reliability",
     "hero_header": "Your Gateway to Next-Generation Internet",
     "hero_subheader": "Experience unmatched uptime and superior performance with Technosys — the trusted choice for dependable connectivity and uninterrupted communication.",
+    "bg_img": "/hero_3.png",
     "cta": "Discover More"
   }
 ]
