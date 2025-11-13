@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Technosys | High speed internet solutions",
   description:
-    "Technosys Teleservices offers top-notch leased line, broadband, fiber services, and more, ensuring seamless connectivity for all your needs",
+    "Technosys offers top-notch leased line, broadband, fiber services, and more, ensuring seamless connectivity for all your needs",
 };
 
 export default function RootLayout({
