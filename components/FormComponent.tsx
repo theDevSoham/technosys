@@ -12,10 +12,68 @@ interface FormComponentProps {
 const FormComponent: React.FC<FormComponentProps> = ({ formConfig }) => {
   const { title, fields, button } = formConfig;
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitted(true);
+
+    // Create a FormData object from the form
+    const formData = new FormData(e.currentTarget);
+    // Convert it to a plain object
+    const data: Record<string, string> = {};
+    formData.forEach((value, key) => {
+      data[key] = value.toString();
+    });
+
+    // ✅ Prepare form payload for WordPress AJAX
+    const payload = new URLSearchParams({
+      action: "uagb_process_forms",
+      nonce: "352b8eaff9", // ⚠️ Should be dynamically fetched per session
+      form_data: JSON.stringify({
+        id: "11e9fae6",
+        "First Name": data.first_name || "",
+        "Last Name": data.last_name || "",
+        Email: data.email || "",
+        Message: data.message || "",
+      }),
+      sendAfterSubmitEmail: "true",
+      captcha_version: "v2",
+      captcha_response: "",
+      post_id: "1411",
+      block_id: "11e9fae6",
+    });
+
+    try {
+      setLoading(true);
+      const response = await fetch(
+        "https://technosysonline.com/wp-admin/admin-ajax.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            Accept: "*/*",
+            Origin: "https://technosysonline.com",
+            Referer: "https://technosysonline.com/contact/",
+          },
+          body: payload,
+        }
+      );
+
+      const text = await response.text();
+
+      // ✅ Handle WordPress "0" or success
+      if (!response.ok || text.trim() === "0") {
+        throw new Error("Form submission failed (invalid nonce or data).");
+      }
+
+      console.log("✅ Form submitted successfully:", text);
+      setIsSubmitted(true);
+    } catch (err) {
+      console.error("❌ Error submitting form:", err);
+      alert("Something went wrong while submitting. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -72,7 +130,9 @@ const FormComponent: React.FC<FormComponentProps> = ({ formConfig }) => {
 
           {/* Submit Button */}
           <div className="col-span-2 flex justify-center mt-4 px-4">
-            <AnimatedButton type="submit">{button.text}</AnimatedButton>
+            <AnimatedButton type="submit" loading={loading}>
+              {button.text}
+            </AnimatedButton>
           </div>
         </form>
       )}
