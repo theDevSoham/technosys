@@ -6,7 +6,11 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav style={{ background: `${theme.colors.primary[500]}` }}>
+    <nav
+      style={{
+        background: `linear-gradient(to right, #000 0%, #170c32 20%, #1d1040 40%, #170c32 80%, #1d1040 90%, #000 100%)`,
+      }}
+    >
       <div
         className={`${container} flex justify-between items-center py-3 lg:py-2`}
       >

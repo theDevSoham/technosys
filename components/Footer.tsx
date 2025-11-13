@@ -29,7 +29,7 @@ const Footer = () => {
         background: `linear-gradient(135deg, ${theme.colors.purple[700]} 0%, ${theme.colors.primary[900]} 65%)`,
       }}
     >
-      <div className={`${container} lg:py-12 py-8`}>
+      <div className={`${container} lg:py-6 py-6`}>
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
           <div>
             <p className={`${theme.typography.techno_20_semibold} mb-6`}>
@@ -75,6 +75,12 @@ const Footer = () => {
             </p>
             <StoreButtons />
           </div>
+        </div>
+
+        <div className="border-t border-t-white mt-8 pt-4">
+          <p className={`text-center ${theme.typography.techno_14_reg}`}>
+            Copyright ©  2025 Technosys
+          </p>
         </div>
       </div>
     </footer>

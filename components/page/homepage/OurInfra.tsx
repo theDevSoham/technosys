@@ -7,9 +7,10 @@ import { theme } from "@/assets/theme";
 const OurInfra = () => {
   return (
     <section
-      className="w-full bg-[#08031A] py-20"
+      className="w-full py-20"
       style={{
         color: theme.colors.primary[50],
+        background: "radial-gradient(circle at 85% 28%, #0c0627 0%, #000 20%)"
       }}
     >
       <div
@@ -33,7 +34,7 @@ const OurInfra = () => {
 
           {/* Paragraph */}
           <p
-            className={`${theme.typography.techno_20_semibold} hidden lg:block`}
+            className={`${theme.typography.techno_16_reg} hidden lg:block`}
             style={{
               color: theme.colors.primary[100],
             }}
@@ -41,7 +42,7 @@ const OurInfra = () => {
             {our_infra.para1}
           </p>
           <p
-            className={`${theme.typography.techno_16_reg} block lg:hidden`}
+            className={`${theme.typography.techno_14_reg} block lg:hidden`}
             style={{
               color: theme.colors.primary[100],
             }}
@@ -49,7 +50,7 @@ const OurInfra = () => {
             {our_infra.para1}
           </p>
           <p
-            className={`${theme.typography.techno_20_semibold} hidden lg:block`}
+            className={`${theme.typography.techno_16_reg} hidden lg:block`}
             style={{
               color: theme.colors.primary[100],
             }}
@@ -57,7 +58,7 @@ const OurInfra = () => {
             {our_infra.para2}
           </p>
           <p
-            className={`${theme.typography.techno_16_reg} block lg:hidden`}
+            className={`${theme.typography.techno_14_reg} block lg:hidden`}
             style={{
               color: theme.colors.primary[100],
             }}
@@ -72,12 +73,12 @@ const OurInfra = () => {
                 key={item}
                 className="border rounded-xl p-4"
                 style={{
-                  background: `linear-gradient(to bottom right, ${theme.colors.purple[700]} 0%, ${theme.colors.primary[700]}) 80%`,
+                  background: `linear-gradient(to bottom right, #1d0e3f 0%, #08051e 60%, #000 80%)`,
                   borderColor: theme.colors.white[0],
                 }}
               >
                 <p
-                  className={`${theme.typography.techno_16_reg}`}
+                  className={`${theme.typography.techno_14_reg}`}
                   style={{
                     color: theme.colors.primary[50],
                   }}

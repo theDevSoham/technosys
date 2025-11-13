@@ -13,7 +13,7 @@ const ServicesCard: React.FC<ServiceCardProps> = ({ title, desc, icon }) => {
     <div
       className="w-full min-h-44 lg:min-h-60 rounded-4xl p-6 flex flex-col justify-center lg:items-center items-start shadow-lg border gap-4 cursor-pointer hover:scale-105 transition-transform duration-300"
       style={{
-        background: `linear-gradient(to bottom right, ${theme.colors.purple[800]} 0%, ${theme.colors.primary[800]} 65%)`,
+        background: `linear-gradient(to bottom right, #1d0f3f 0%, #130a2f 10%, #06041c 40%, #07071e 100%)`,
         color: `${theme.colors.primary[50]}`,
         borderColor: theme.colors.primary[50],
       }}
@@ -21,44 +21,30 @@ const ServicesCard: React.FC<ServiceCardProps> = ({ title, desc, icon }) => {
       <div className="flex justify-start items-center gap-6">
         {/* Icon container */}
         <div
-          className="w-15 h-15 rounded-lg flex items-center justify-center relative"
+          className="w-15 h-15 rounded-xl flex items-center justify-center backdrop-blur-[1px]"
           style={{
-            background: `linear-gradient(to bottom right, ${theme.colors.purple[800]} 0%, ${theme.colors.primary[800]} 65%)`,
-            borderColor: theme.colors.primary[50],
+            background: "rgba(255, 255, 255, 0.08)",
+            border: "1px solid rgba(255, 255, 255, 0.15)",
+            boxShadow:
+              "inset 0 1px 3px rgba(255,255,255,0.2), inset 0 -2px 6px rgba(0,0,0,0.3)",
           }}
         >
-          <div
-            className="absolute inset-0 rounded-2xl opacity-80 blur-[2px]"
-            style={{
-              background: `linear-gradient(145deg, ${theme.colors.primary[50]} 0%, ${theme.colors.purple[600]} 100%)`,
-            }}
-          />
-          <div
-            className="relative z-10 flex items-center justify-center w-full h-full rounded-2xl shadow-[inset_2px_2px_6px_rgba(255,255,255,0.05),inset_-2px_-2px_6px_rgba(0,0,0,0.5)]"
-            style={{
-              background: `linear-gradient(to bottom right, ${theme.colors.purple[800]} 0%, ${theme.colors.primary[800]} 65%)`,
-            }}
-          >
-            <Image src={`/${icon}.svg`} alt={icon} width={32} height={32} />
-          </div>
+          <Image src={`/${icon}.svg`} alt={icon} width={32} height={32} />
         </div>
 
         {/* Title */}
-        <h3
-          className={theme.typography.techno_20_semibold}
-          style={{ color: theme.colors.white[0] }}
-        >
-          {title}
-        </h3>
+        <div className="flex-1">
+          <h3
+            className={theme.typography.techno_20_semibold}
+            style={{ color: theme.colors.white[0] }}
+          >
+            {title}
+          </h3>
+        </div>
       </div>
 
       {/* Description */}
-      <p className={`${theme.typography.techno_16_reg} hidden lg:block`}>
-        {desc}
-      </p>
-      <p className={`${theme.typography.techno_16_reg} block lg:hidden`}>
-        {desc}
-      </p>
+      <p className={`${theme.typography.techno_14_reg}`}>{desc}</p>
     </div>
   );
 };

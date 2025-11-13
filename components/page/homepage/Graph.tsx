@@ -8,13 +8,13 @@ const Graph = () => {
   return (
     <section className="w-full py-16">
       <div
-        className={`${container} w-full h-full flex flex-col-reverse lg:flex-row items-start gap-10 lg:gap-16`}
+        className={`${container} w-full h-full flex flex-col-reverse lg:flex-row items-start gap-10 lg:gap-6`}
       >
         {/* LEFT SIDE - CHART CARD */}
         <div
-          className="flex-1 md:w-full w-auto rounded-2xl p-6 lg:p-8 shadow-2xl relative"
+          className="flex-1 md:w-full w-auto rounded-2xl p-6 lg:p-8 shadow-2xl relative border border-white"
           style={{
-            background: theme.colors.primary[700],
+            background: theme.colors.primary[900],
           }}
         >
           {/* Header */}
@@ -156,25 +156,25 @@ const Graph = () => {
             {graph.right_section.headline}
           </h2>
           <p
-            className={`${theme.typography.techno_20_semibold} hidden lg:block`}
+            className={`${theme.typography.techno_16_reg} hidden lg:block`}
             style={{ color: theme.colors.primary[100] }}
           >
             {graph.right_section.description.para1}
           </p>
           <p
-            className={`${theme.typography.techno_16_reg} block lg:hidden`}
+            className={`${theme.typography.techno_14_reg} block lg:hidden`}
             style={{ color: theme.colors.primary[100] }}
           >
             {graph.right_section.description.para1}
           </p>
           <p
-            className={`${theme.typography.techno_20_semibold} hidden lg:block`}
+            className={`${theme.typography.techno_16_reg} hidden lg:block`}
             style={{ color: theme.colors.primary[100] }}
           >
             {graph.right_section.description.para2}
           </p>
           <p
-            className={`${theme.typography.techno_16_reg} block lg:hidden`}
+            className={`${theme.typography.techno_14_reg} block lg:hidden`}
             style={{ color: theme.colors.primary[100] }}
           >
             {graph.right_section.description.para2}

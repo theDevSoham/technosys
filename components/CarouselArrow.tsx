@@ -31,9 +31,9 @@ const CarouselArrow: FC<CarouselArrowProps> = ({
       onClick={onClick}
       title={label}
       className={`absolute top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex justify-center items-center shadow-lg hover:scale-110 transition-transform ${className}`}
-	  style={{
-		background: theme.colors.primary[600]
-	  }}
+      style={{
+        background: "rgba(255, 255, 255, 0.2)",
+      }}
     >
       {direction === "left" ? (
         <ChevronLeft size={size} />

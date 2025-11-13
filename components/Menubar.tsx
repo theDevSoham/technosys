@@ -142,9 +142,9 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
   /* -------------------- DESKTOP VIEW -------------------- */
   return (
     <ul
-      className={`flex items-center justify-center space-x-8 rounded-full px-8 py-3 shadow-md ${theme.typography.techno_16_semibold}`}
+      className={`flex items-center justify-center space-x-8 rounded-full px-8 py-3 shadow-md ${theme.typography.techno_16_semibold} bg-[#17004A]`}
       style={{
-        backgroundColor: theme.colors.primary["800"],
+        // backgroundColor: theme.colors.primary["800"],
         color: "#FFFFFF",
       }}
     >

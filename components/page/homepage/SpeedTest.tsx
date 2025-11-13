@@ -137,9 +137,11 @@ function SpeedCard({
       whileHover={{ y: -4 }}
       transition={{ type: "spring", stiffness: 200 }}
     >
-      <div className="flex gap-2">
-        <div className="flex justify-center mb-2 text-purple-300">{icon}</div>
-        <div className={`${theme.typography.techno_20_semibold}`}>{label}</div>
+      <div className="flex gap-2 items-center">
+        <div className="flex justify-center mb-2 text-purple-300 p-2 bg-white/20 rounded-lg backdrop-blur-[1px]">
+          {icon}
+        </div>
+        <div className={`${theme.typography.techno_16_semibold}`}>{label}</div>
       </div>
       <div className="text-2xl font-bold mt-1">
         {value.toFixed(1)} <span className="text-sm">{unit}</span>
