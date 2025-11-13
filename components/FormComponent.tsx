@@ -25,39 +25,13 @@ const FormComponent: React.FC<FormComponentProps> = ({ formConfig }) => {
       data[key] = value.toString();
     });
 
-    // ✅ Prepare form payload for WordPress AJAX
-    const payload = new URLSearchParams({
-      action: "uagb_process_forms",
-      nonce: "352b8eaff9", // ⚠️ Should be dynamically fetched per session
-      form_data: JSON.stringify({
-        id: "11e9fae6",
-        "First Name": data.first_name || "",
-        "Last Name": data.last_name || "",
-        Email: data.email || "",
-        Message: data.message || "",
-      }),
-      sendAfterSubmitEmail: "true",
-      captcha_version: "v2",
-      captcha_response: "",
-      post_id: "1411",
-      block_id: "11e9fae6",
-    });
-
     try {
       setLoading(true);
-      const response = await fetch(
-        "https://technosysonline.com/wp-admin/admin-ajax.php",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            Accept: "*/*",
-            Origin: "https://technosysonline.com",
-            Referer: "https://technosysonline.com/contact/",
-          },
-          body: payload,
-        }
-      );
+      const response = await fetch("/api/submit_form", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
       const text = await response.text();
 
