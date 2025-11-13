@@ -1,22 +1,36 @@
 "use client";
 
 import { Carousel } from "react-responsive-carousel";
-import heros from "@/content/homepage/hero.json";
 import { theme } from "@/assets/theme";
 import CarouselArrow from "./CarouselArrow";
 import AnimatedButton from "./AnimatedButton";
 import Image from "next/image";
+import { HeroSection, HeroSections } from "@/types/Hero";
 
-const HeroCarousel = () => {
-  const handleDiscover = () => {
-    console.log("Discover");
+interface HeroCarouselProps {
+  heros: HeroSections;
+  showIndicators?: boolean;
+  onCallToAction?: (item: HeroSection) => void;
+}
+
+const HeroCarousel: React.FC<HeroCarouselProps> = ({
+  heros,
+  showIndicators = true,
+  onCallToAction = () => {},
+}) => {
+  const handleDiscover = (currentItem: HeroSection) => {
+    if (currentItem?.cta_link) {
+      window.location.href = currentItem?.cta_link;
+    }
+
+    onCallToAction(currentItem);
   };
 
   return (
     <Carousel
       showThumbs={false} // hide thumbnails
       showStatus={false} // show slide number
-      showIndicators={true} // navigation dots
+      showIndicators={showIndicators} // navigation dots
       infiniteLoop={true} // infinite scroll
       autoPlay={true} // autoplay
       interval={5000} // slide interval
@@ -103,9 +117,11 @@ const HeroCarousel = () => {
                   {hero.hero_subheader}
                 </h3>
 
-                <AnimatedButton onClick={handleDiscover}>
-                  {hero.cta}
-                </AnimatedButton>
+                {(hero?.cta || hero?.cta_link) && (
+                  <AnimatedButton onClick={() => handleDiscover(hero)}>
+                    {hero.cta || hero?.cta_link}
+                  </AnimatedButton>
+                )}
               </div>
             </div>
           </div>

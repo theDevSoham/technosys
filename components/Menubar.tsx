@@ -108,9 +108,9 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
                     )}
                   </AnimatePresence>
 
-                  <li className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors font-semibold">
+                  {/* <li className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors font-semibold">
                     Blog
-                  </li>
+                  </li> */}
 
                   <li
                     className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] transition-colors font-semibold"
@@ -181,9 +181,9 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
       </HeadlessMenu>
 
       {/* Blog */}
-      <div className="cursor-pointer hover:text-[#7F67E8] transition-colors">
+      {/* <div className="cursor-pointer hover:text-[#7F67E8] transition-colors">
         Blog
-      </div>
+      </div> */}
 
       {/* My Account */}
       <div
