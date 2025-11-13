@@ -1,0 +1,30 @@
+{
+  "headline": "Our Main Connectivity Solutions",
+  "description": "Discover a wide range of connectivity services catered to meet your specific needs, ensuring high-speed, uninterrupted internet access for all.",
+  "solutions": [
+    {
+      "title": "Leased Line",
+      "description": "Our Leased Line services offer dedicated bandwidth for businesses requiring secure and reliable connectivity for data transfer and communication.",
+      "image": "offer1.webp",
+      "link": "/contact_us"
+    },
+    {
+      "title": "Broadband Services",
+      "description": "Choose from a variety of Broadband Services designed for residential and commercial users, ensuring fast and efficient internet access at affordable rates.",
+      "image": "offer2.webp",
+      "link": "/contact_us"
+    },
+    {
+      "title": "Fiber Services",
+      "description": "Opt for Fiber Services to experience ultra-fast internet speeds and seamless connectivity backed by our robust Fiber Optic network infrastructure.",
+      "image": "offer3.webp",
+      "link": "/contact_us"
+    },
+    {
+      "title": "Wireless Point-to-Multipoint",
+      "description": "With Wireless Point-to-Multipoint solutions, enjoy efficient wireless connectivity for multiple endpoints, ideal for businesses and organizations requiring scalable network solutions.",
+      "image": "offer4.webp",
+      "link": "/contact_us"
+    }
+  ]
+}

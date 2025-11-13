@@ -78,7 +78,9 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
                     className="px-6 py-4 cursor-pointer hover:bg-[#393E6D] flex items-center justify-between transition-colors"
                     onClick={() => setMobileServicesOpen((p) => !p)}
                   >
-                    <span className="font-semibold">Services</span>
+                    <Link href="/services" className="font-semibold">
+                      Services
+                    </Link>
                     <ChevronDown
                       size={18}
                       className={`transition-transform ${
@@ -121,7 +123,10 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
                           : theme.colors.purple[50],
                     }}
                   >
-                    <Link href="https://technosysonline.com/my-account/" onClick={() => setMenuOpen(false)}>
+                    <Link
+                      href="https://technosysonline.com/my-account/"
+                      onClick={() => setMenuOpen(false)}
+                    >
                       My Account
                     </Link>
                   </li>
@@ -146,7 +151,7 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
       {/* Services Dropdown */}
       <HeadlessMenu as="div" className="relative inline-block text-left">
         <MenuButton className="flex items-center space-x-1 cursor-pointer hover:text-[#7F67E8] transition-colors">
-          <span>Services</span>
+          <Link href="/services">Services</Link>
           <ChevronDown size={16} />
         </MenuButton>
 
