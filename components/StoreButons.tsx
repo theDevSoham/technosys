@@ -12,7 +12,7 @@ export default function StoreButtons() {
         className="flex items-center gap-3 bg-black text-white rounded-lg shadow-md hover:opacity-90 transition"
       >
         <Image
-          src="/google_play.png"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
           alt="Get it on Google Play"
           width={180}
           height={60}
@@ -27,7 +27,7 @@ export default function StoreButtons() {
         className="flex items-center gap-3 bg-black text-white rounded-lg shadow-md hover:opacity-90 transition"
       >
         <Image
-          src="/app_store.png"
+          src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
           alt="Download on the App Store"
           width={180}
           height={60}

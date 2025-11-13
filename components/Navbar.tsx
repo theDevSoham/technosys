@@ -13,11 +13,11 @@ const Navbar = () => {
         <div className="lg:w-72 w-60">
           <Link href="/">
             <Image
-              src="/Logo.png"
-              width={300}
-              height={88}
+              src="/Logo.webp"
+              width={167}
+              height={49}
               alt="Logo image"
-              className="lg:w-[250px] w-[200px] aspect-1"
+              className="lg:w-[200px] w-[150px] aspect-1"
             />
           </Link>
         </div>

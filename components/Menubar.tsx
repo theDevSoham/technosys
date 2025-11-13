@@ -121,7 +121,7 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
                           : theme.colors.purple[50],
                     }}
                   >
-                    <Link href="/account" onClick={() => setMenuOpen(false)}>
+                    <Link href="https://technosysonline.com/my-account/" onClick={() => setMenuOpen(false)}>
                       My Account
                     </Link>
                   </li>
@@ -192,7 +192,7 @@ const MenuBar: React.FC<MenuBarProps> = ({ mobileView = false }) => {
           color: pathname === "/account" ? theme.colors.pink[600] : "",
         }}
       >
-        <Link href="/account">My Account</Link>
+        <Link href="https://technosysonline.com/my-account/">My Account</Link>
       </div>
     </ul>
   );
