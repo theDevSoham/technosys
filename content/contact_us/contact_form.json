@@ -25,9 +25,9 @@
     "social_media": {
       "label": "Follow",
       "links": {
-        "facebook": "#",
-        "instagram": "#",
-        "google": "#"
+        "facebook": "https://facebook.com",
+        "instagram": "https://instagram.com",
+        "google": "https://g.co/kgs/k5euLtf"
       }
     },
     "form": {
