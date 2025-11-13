@@ -1,0 +1,79 @@
+{
+  "contact": {
+    "title": "Contact Us",
+    "description": "Reach out to Technosys Teleservices for all your internet needs. We are here to provide you with seamless connectivity solutions.",
+    "details": [
+      {
+        "label": "Address",
+        "value": "315, Golden Square, Ankleshwar – Valia Rd, near Valia, GIDC, Ankleshwar GIDC, Ankleshwar, Gujarat 393002",
+        "icon": "location",
+        "render": "address"
+      },
+      {
+        "label": "Phone",
+        "value": "07043537045",
+        "icon": "phone",
+        "render": "phone_link"
+      },
+      {
+        "label": "Email",
+        "value": "sales@technosysonline.com",
+        "icon": "mail",
+        "render": "email_link"
+      }
+    ],
+    "social_media": {
+      "label": "Follow",
+      "links": {
+        "facebook": "#",
+        "instagram": "#",
+        "google": "#"
+      }
+    },
+    "form": {
+      "title": "Get in Touch",
+      "fields": [
+        {
+          "name": "first_name",
+          "label": "First Name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Enter your first name",
+          "layout": "half"
+        },
+        {
+          "name": "last_name",
+          "label": "Last Name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Enter your last name",
+          "layout": "half"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "placeholder": "Enter your email address",
+          "layout": "full"
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "type": "textarea",
+          "required": false,
+          "placeholder": "Write your message here",
+          "layout": "full"
+        }
+      ],
+      "button": {
+        "text": "Send",
+        "style": {
+          "color": "#ffffff",
+          "background": "#00b8f1",
+          "shape": "rounded"
+        }
+      }
+    }
+  }
+}

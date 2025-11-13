@@ -9,6 +9,7 @@ interface AnimatedButtonProps {
   disabled?: boolean;
   children: React.ReactNode;
   className?: string;
+  type?: "button" | "submit" | "reset";
 }
 
 export default function AnimatedButton({
@@ -16,10 +17,12 @@ export default function AnimatedButton({
   disabled = false,
   children,
   className = "",
+  type = "button",
 }: AnimatedButtonProps) {
   return (
     <motion.button
       onClick={onClick}
+      type={type}
       whileHover={{ scale: disabled ? 1 : 1.05 }}
       whileTap={{ scale: disabled ? 1 : 0.95 }}
       disabled={disabled}
