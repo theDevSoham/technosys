@@ -86,7 +86,7 @@ const FormComponent: React.FC<FormComponentProps> = ({ formConfig }) => {
                   name={field.name}
                   placeholder={field.placeholder}
                   required={field.required}
-                  className="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full p-3.5 shadow-xs placeholder:text-body rounded-2xl"
+                  className="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full p-4 shadow-xs placeholder:text-body rounded-xl"
                   rows={4}
                 />
               ) : (
@@ -96,7 +96,7 @@ const FormComponent: React.FC<FormComponentProps> = ({ formConfig }) => {
                   name={field.name}
                   placeholder={field.placeholder}
                   required={field.required}
-                  className="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-2.5 py-2 shadow-xs placeholder:text-body rounded-full"
+                  className="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-2.5 lg:py-4 py-3 shadow-xs placeholder:text-body rounded-lg"
                 />
               )}
             </div>
