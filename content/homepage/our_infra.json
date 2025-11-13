@@ -1,10 +1,10 @@
 {
   "headline": "Our Infra: Always Connected, Always Reliable",
-  "para1": "Your connection is powered by a robust triple-line internet setup. We’ve built our infrastructure with 3 independent internet lines running from our ISP center to your home.",
-  "para2": "So even if one line goes down, the other two automatically take over — ensuring you stay seamlessly connected 24×7 without interruptions.",
+  "para1": "Our robust infrastructure is built on a triple-line network architecture, ensuring non-stop internet connectivity. Each line operates independently, delivering unmatched reliability and uptime for both residential and enterprise clients.",
+  "para2": "Even in the rare event of a line failure, our intelligent redundancy automatically reroutes your connection through the remaining lines — guaranteeing uninterrupted access 24×7.",
   "cards": [
-    "Fast and efficient internet access for both personal and business needs.",
-    "High-speed dedicated internet connection for continuous and reliable data transfer.",
-    "Cutting-edge fiber optic technology for ultra-fast data transmission and connectivity."
+    "High-speed internet solutions optimized for personal and professional needs.",
+    "Dedicated leased line connections with enterprise-grade stability.",
+    "Next-generation fiber optic backbone ensuring low latency and lightning-fast transmission."
   ]
 }

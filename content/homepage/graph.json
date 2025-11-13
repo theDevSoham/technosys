@@ -1,7 +1,7 @@
 {
   "left_section": {
     "headline": "Network Uptime History,",
-    "subheadline": "A decade of consistent excellence",
+    "subheadline": "A Decade of Consistent Excellence",
     "banner": {
       "text": "99.99%",
       "subtext": "Live Uptime"
@@ -10,19 +10,19 @@
       {
         "tag": "Average Uptime",
         "metric": "99.97%",
-        "duration": "Last 10 years",
+        "duration": "Last 10 Years",
         "metric_color": "#E01E7C"
       },
       {
         "tag": "Peak Uptime",
         "metric": "99.99%",
-        "duration": "2022-2024",
+        "duration": "2022–2024",
         "metric_color": "#009966"
       },
       {
         "tag": "Network Incidents",
         "metric": "<5",
-        "duration": "Per year average",
+        "duration": "Per Year Average",
         "metric_color": "#155DFC"
       }
     ]
@@ -30,8 +30,8 @@
   "right_section": {
     "headline": "Graph",
     "description": {
-      "para1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-      "para2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      "para1": "Our network uptime speaks for itself — delivering stability, scalability, and superior service for over a decade. Every connection is backed by proactive monitoring and 24×7 support to ensure your operations remain uninterrupted.",
+      "para2": "At Technosys Teleservices, excellence isn’t an option — it’s our standard. Continuous infrastructure upgrades, intelligent routing, and redundant backbone design guarantee seamless connectivity and exceptional user experience."
     }
   },
   "graph_data": {

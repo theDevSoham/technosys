@@ -5,19 +5,19 @@
       "id": 1,
       "name": "Hanna Dew",
       "rating": 4,
-      "review": "Technosys Teleservices delivers exceptional internet solutions. Highly recommended for reliable service! Technosys Teleservices delivers exceptional internet solutions. Highly recom"
+      "review": "Technosys Teleservices has transformed our online experience with their ultra-reliable internet solutions. The connection is stable, fast, and backed by excellent customer support. Highly recommended!"
     },
     {
       "id": 2,
-      "name": "Hanna Dew",
-      "rating": 4,
-      "review": "Technosys Teleservices delivers exceptional internet solutions. Highly recommended for reliable service! Technosys Teleservices delivers exceptional internet solutions. Highly recom"
+      "name": "Michael Tan",
+      "rating": 5,
+      "review": "Exceptional service quality and remarkable uptime. Technosys delivers consistent performance that keeps our business operations running smoothly every day."
     },
     {
       "id": 3,
-      "name": "Hanna Dew",
-      "rating": 4,
-      "review": "Technosys Teleservices delivers exceptional internet solutions. Highly recommended for reliable service! Technosys Teleservices delivers exceptional internet solutions. Highly recom"
+      "name": "Priya Sharma",
+      "rating": 5,
+      "review": "We’ve been using Technosys for over a year, and it’s been flawless. Great speed, great service, and zero downtime — exactly what we needed for our growing company."
     }
   ]
 }

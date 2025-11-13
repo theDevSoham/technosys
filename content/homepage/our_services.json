@@ -4,25 +4,25 @@
     {
       "id": 1,
       "title": "Broadband",
-      "desc": "Fast and efficient internet access for both personal and business needs.",
+      "desc": "Enjoy ultra-fast and reliable broadband access designed for seamless streaming, gaming, and work-from-home experiences — ideal for both personal and professional use.",
       "icon": "wifi"
     },
     {
       "id": 2,
       "title": "Leased Line",
-      "desc": "High-speed dedicated internet connection for continuous and reliable data transfer.",
+      "desc": "Dedicated high-speed internet connectivity with guaranteed uptime and zero congestion — perfect for enterprises requiring stable, high-bandwidth data transfer.",
       "icon": "cable"
     },
     {
       "id": 3,
       "title": "Fiber Services",
-      "desc": "Cutting-edge fiber optic technology for ultra-fast data transmission and connectivity.",
+      "desc": "Empowered by state-of-the-art fiber optic technology, our network delivers exceptional speed, low latency, and superior reliability for all your digital operations.",
       "icon": "building"
     },
     {
       "id": 4,
       "title": "Industry IT Support",
-      "desc": "Beyond connectivity, we provide end-to-end IT infrastructure support to keep business running smoothly.",
+      "desc": "Beyond connectivity, Technosys provides complete IT infrastructure management and support solutions — keeping your business systems secure and always online.",
       "icon": "server"
     }
   ]

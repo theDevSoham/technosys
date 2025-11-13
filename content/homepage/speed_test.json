@@ -20,18 +20,18 @@
       "title": "Ping",
       "slug": "ping",
       "speed": "0.0",
-      "unit": "Ms",
+      "unit": "ms",
       "icon": "wifi"
     }
   ],
   "faq_cards": [
     {
       "title": "Why Speed Matters",
-      "desc": "Fast, reliable internet is essential for gaming, streaming, and work. Our network delivers consistent speeds 24/7."
+      "desc": "A fast and consistent internet connection is vital for gaming, streaming, and remote work. Technosys ensures your data flows seamlessly without interruptions — anytime, anywhere."
     },
     {
       "title": "Symmetric Speeds",
-      "desc": "Unlike traditional connections, we offer equal download and upload speeds for seamless video calls and content creation."
+      "desc": "Unlike standard connections, Technosys delivers equal upload and download speeds, enabling smooth video calls, real-time collaboration, and faster cloud syncing."
     }
   ]
 }
