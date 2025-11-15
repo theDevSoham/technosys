@@ -19,7 +19,7 @@ export default function IndustriesServed() {
                 key={name}
                 className={`flex-1 min-w-[200px] text-center rounded-xl py-16 ${theme.typography.techno_20_semibold}`}
                 style={{
-                  background: `${theme.colors.purple[900]}`,
+                  background: `#100626`,
                   color: theme.colors.purple[300],
                 }}
                 initial={{ opacity: 0, y: 30 }}
